@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "env-ask-sdk/bin/python",
+    "git.ignoreLimitWarning": true
+}
