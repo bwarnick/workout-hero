@@ -2,6 +2,7 @@
 # This sample demonstrates handling intents from an Alexa skill using the Alexa Skills Kit SDK.
 
 import logging
+import json
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
@@ -40,6 +41,10 @@ class WorkoutHeroIntentHandler(AbstractRequestHandler):
         speech_text = "Ok, let's get started!"
         handler_input.response_builder.speak(
             speech_text).set_should_end_session(False)
+        # while ()
+        # handler_input.response_builder.speak(
+        #     get(key[, "Done"]).set_should_end_session(False)
+
         return handler_input.response_builder.response
 
 
@@ -170,17 +175,17 @@ user: dict = {
 programs: dict = {
     10000: [
         {
-            "name": "Jumping Jacks",
+            "name": "Squats",
             "type": "Floor"
         }
     ],
-    10000: [
+    10001: [
         {
             "name": "Jumping Jacks",
             "type": "Floor"
         }
     ],
-    10001: [
+    10002: [
         {
             "name": "Plank",
             "type": "Floor"
